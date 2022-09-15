@@ -1,6 +1,8 @@
 import './css/basic.css';
 import Section01 from './doc/Section01';
-import Section02 from './doc/Section02';
+import MainVisual from './doc/MainVisual';
+
+import Section03 from './doc/Section03';
 
 
 const App = () => {
@@ -12,7 +14,8 @@ const App = () => {
       </nav>
 
       <Section01 />
-      <Section02 />
+      <MainVisual />
+      <Section03 />
     </>
   )
 }

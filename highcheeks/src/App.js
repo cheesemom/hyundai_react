@@ -1,10 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import ReactFullpage from "@fullpage/react-fullpage";
 import "./App.css";
-import Header from './component/Header';
-import MainVisual from './component/MainVisual';
-import Footer from './component/Footer';
+import Header from './Component/Header';
+import MainVisual from './Component/MainVisual';
+import MainContent from "./Component/MainContent";
 
 
 const App = () => {
@@ -14,9 +11,9 @@ const App = () => {
 
       <main>
         <MainVisual />
+        <MainContent />
       </main>
 
-      <Footer />
     </div>
   )
 }

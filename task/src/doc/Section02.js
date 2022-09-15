@@ -1,86 +1,42 @@
+import React, { Component } from "react";
+import Slider from "react-slick";
+
 import '../css/Section02.css'
 
-const Section02 = () => {
-    return (
-        <section className="business">
-            <h2><span className="t_b">Our</span> Business</h2>
-            <p>새로운 미래를 열어가는 산리오</p>
-            <div className="container">
-                <figure>
-                    <div className="inbox">
-                        <img src="./img/responsive02.jpg" alt="" />
+
+export default class SimpleSlider extends Component {
+    render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
+        return (
+            <div>
+                <h2> Single Item</h2>
+                <Slider {...settings}>
+                    <div>
+                        <h3>1</h3>
                     </div>
-
-                    <div className="cover">
-                        <h3>주요사업 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam, cum facere voluptate
-                            error itaque.</p>
-
-                        <a href="">자세히보기</a>
+                    <div>
+                        <h3>2</h3>
                     </div>
-                </figure>
-
-                <figure>
-                    <div className="inbox">
-                        <img src="./img/responsive01.jpg" alt="" />
+                    <div>
+                        <h3>3</h3>
                     </div>
-
-                    <div className="cover">
-                        <h3>주요사업 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam, cum facere voluptate
-                            error itaque.</p>
-
-                        <a href="">자세히보기</a>
+                    <div>
+                        <h3>4</h3>
                     </div>
-                </figure>
-
-                <figure>
-                    <div className="inbox">
-                        <img src="./img/responsive02.jpg" alt="" />
+                    <div>
+                        <h3>5</h3>
                     </div>
-
-                    <div className="cover">
-                        <h3>주요사업 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam, cum facere voluptate
-                            error itaque.</p>
-
-                        <a href="">자세히보기</a>
+                    <div>
+                        <h3>6</h3>
                     </div>
-                </figure>
-
-                <figure>
-                    <div className="inbox">
-                        <img src="./img/responsive03.jpg" alt="" />
-                    </div>
-
-                    <div className="cover">
-                        <h3>주요사업 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam, cum facere voluptate
-                            error itaque.</p>
-
-                        <a href="">자세히보기</a>
-                    </div>
-                </figure>
+                </Slider>
             </div>
-
-            <div className="inner">
-                <div className="tit">
-                    <strong>산리오 친구들</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi molestiae modi id dolorum?
-                        Doloremque!</p>
-                </div>
-                <div>
-                    <ul className="dotList">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    )
+        );
+    }
 }
-
-
-export default Section02;

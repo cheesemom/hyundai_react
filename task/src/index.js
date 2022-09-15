@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/common.css';
 import App from './App';
-import "slick-carousel/slick/slick.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

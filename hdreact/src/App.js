@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import MainSlider from './component/MainSlider';
-
+import DoubleText from './DoubleText'
+import Slick00 from './Slick00';
+import MainVisual from './Slick00';
+import GitUser from './GitUser';
+import SyncSlider from './component/SyncSlider'
 const DB = [
   {
     id: 1,
@@ -10,7 +13,8 @@ const DB = [
     submenu: [
       { content: "smenu011", link: "/1" },
       { content: "smenu012", link: "/2" },
-      { content: "smenu013", link: "/3" }
+      { content: "smenu013", link: "/3" },
+
     ]
   },
   {
@@ -18,9 +22,10 @@ const DB = [
     content: "menu02",
     link: "/s1",
     submenu: [
-      { content: "smenu011", link: "/1" },
-      { content: "smenu012", link: "/2" },
-      { content: "smenu013", link: "/3" }
+      { content: "smenu021", link: "/1" },
+      { content: "smenu022", link: "/2" },
+      { content: "smenu023", link: "/3" },
+
     ]
   },
   {
@@ -28,9 +33,10 @@ const DB = [
     content: "menu03",
     link: "/s1",
     submenu: [
-      { content: "smenu011", link: "/1" },
-      { content: "smenu012", link: "/2" },
-      { content: "smenu013", link: "/3" }
+      { content: "smenu031", link: "/1" },
+      { content: "smenu032", link: "/2" },
+      { content: "smenu033", link: "/3" },
+
     ]
   }
 ]
@@ -38,10 +44,9 @@ const DB = [
 function App() {
   const [CB, setCB] = useState("");
   const [TG, setTG] = useState(false);
-
   return (
     <div className='Wrap'>
-      <header>
+      {/* <header>
         <h1 className={CB} onClick={() => setCB('on')}>LOGO</h1>
         <h2 className={`ggg ${TG ? 'on' : ''}`}>toggle class</h2>
         <button onClick={() => setTG(!TG)}>class 토글</button>
@@ -57,18 +62,14 @@ function App() {
                     </li>)
                   }
                 </ul>
-              </li >)
+              </li>)
             }
           </ul>
         </nav>
-      </header >
-
-
+      </header> */}
       <main>
-        <MainSlider />
+        <SyncSlider />
       </main>
-
-
     </div>
 
   );
