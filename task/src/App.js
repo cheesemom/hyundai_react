@@ -16,6 +16,7 @@ const App = () => {
 
       <Section01 />
       <MainVisual />
+
       <Section03 />
       <Section04 />
     </>

@@ -78,10 +78,10 @@ const Section04 = () => {
                 <div className="right">
                     <div className="info">
                         <p class="customer">COMPANY</p>
-                        <p class="head">AGREEMENT</p>
+                        <p class="customer">AGREEMENT</p>
                         <p class="customer">PRIVACY POLICY</p>
-                        <p class="head">GUIDE</p>
-                        <p class="head">BUSINESS LICENSE</p>
+                        <p class="customer">GUIDE</p>
+                        <p class="customer">BUSINESS LICENSE</p>
                     </div>
                     <div className="sns">
                         <p>FOLLOW US</p>
